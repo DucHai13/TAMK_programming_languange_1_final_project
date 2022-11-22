@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Hotel_booking_program/Hotel_booking_program.vcxproj.user
+/Hotel_booking_program/Hotel_booking_program.vcxproj.filters
+/Hotel_booking_program/Hotel_booking_program.sln
+/Hotel_booking_program/Hotel_booking_program.vcxproj
+/Hotel_booking_program/x64/Debug
+/Hotel_booking_program/.vs/Hotel_booking_program
