@@ -1,7 +1,7 @@
 # TAMK_programming_languange_1_final_project
-Author: Hai Chu
-Date of create: 2022/11/22
-Description below
+# Author: Hai Chu
+# Date of create: 2022/11/22
+# Description below
 *
 *
 *
