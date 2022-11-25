@@ -26,4 +26,4 @@ The booking program consist of:
 
 
 # # Update
-There is currently no update yet. I am researching on how to do Window form so the project looks like an application.
+There is currently no update yet. I am researching on how to do Windows form so the project looks like an application.
