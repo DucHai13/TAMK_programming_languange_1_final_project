@@ -18,7 +18,7 @@ int randGen(int a, int b, int c) {
         srand(static_cast<int> (time(0)));
         return min(a, b) + rand() % n;
     }
-} 
+}
 //generate a random number between a and b, c = 1 if the return is even, c = 0 if the return is random
 
 int input_int() {
@@ -54,7 +54,7 @@ int input_int() {
         }
     }
     return ans;
-} 
+}
 //check if the input is of type int and return an integer if it is
 
 string input_string() {
@@ -84,7 +84,7 @@ string input_string() {
         }
     }
     return s;
-} 
+}
 //check if the input is of type string and return a string if it is
 
 bool check_range(int a, int b, int c) {
@@ -353,7 +353,7 @@ void Menu::change_info(Customer* c, int choice) {
         change_room(c);
     }
     else if (choice == 0) {
-        cout << "Process ended. " << endl;
+        cout << endl << "Process ended. " << endl;
     }
 }
 //Use to change information of a customer
@@ -427,7 +427,7 @@ void Menu::change_room(Customer* c) {
     do {
         print_customer(c);
         cout << "0. Stop this function, " << endl
-            << "1. Change room," << endl
+            << "1. Remove room," << endl
             << "2. Add room, " << endl
             << "Enter your choice: ";
         int choice;

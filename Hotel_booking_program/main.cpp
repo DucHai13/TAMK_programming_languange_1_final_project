@@ -8,9 +8,5 @@ int main() {
 	Menu menu(room_size);
 	menu.input();
 	menu.interface();
-	//menu.output();
-	//menu.search_function();
-	//menu.change_info_function();
-	//menu.change_info_function()
 	return 0;
 }
