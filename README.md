@@ -12,7 +12,7 @@ This project is created and modified on visual studio community 2022, so if ther
 
 
 ## Instruction
-## The booking program consist of:
+### The booking program consist of:
 1. Add a new customer
 2. Add rooms to this customer
 3. Move on to another customer/ Open the menu
