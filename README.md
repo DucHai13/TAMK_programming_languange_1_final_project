@@ -12,17 +12,17 @@ This project is created and modified on visual studio community 2022, so if ther
 
 
 ## Instruction
-The booking program consist of:
-  1. Add a new customer
-  2. Add rooms to this customer
-  3. Move on to another customer/ Open the menu
-  4. In the menu, choose one of the following:
-    a. Print all the customer to the screen.
-    b. Search for a customer
-    c. Add more customer.
-    d. Change information of a customer.
-    e. Close the menu.
-  5. After you have chosen 1 of the 4 function above, continue following the instruction on the screen.
+## The booking program consist of:
+1. Add a new customer
+2. Add rooms to this customer
+3. Move on to another customer/ Open the menu
+4. In the menu, choose one of the following:
+  a. Print all the customer to the screen.
+  b. Search for a customer
+  c. Add more customer.
+  d. Change information of a customer.
+  e. Close the menu.
+5. After you have chosen 1 of the 4 function above, continue following the instruction on the screen.
 
 
 ## Update
