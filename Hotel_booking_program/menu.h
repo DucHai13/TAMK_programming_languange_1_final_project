@@ -116,6 +116,10 @@ void Menu::input_customer(Customer* c) {
     name = input_string();
     cout << "Enter customer stay period: ";
     stay = input_int();
+    while (stay <= 0) {
+        cout << "Invalid input, please try again: ";
+        stay = input_int();
+    }
     c->setName(name);
     c->setStay(stay);
 }
