@@ -199,6 +199,7 @@ void Menu::calculate_total(Customer* c) {
     c->setDiscount(discount);
     c->setTotal(total);
 }
+//Use to calculate the total invoice of a customer, and also pick a random discount between 0% and 20%
 
 void Menu::input() {
     int stop_input = 1;
@@ -264,6 +265,7 @@ void Menu::print_customer(Customer* c) {
     }
     cout << endl;
 }
+//Print only one customer
 
 int Menu::search_by_name(string name) {
     int ans = -1;
@@ -328,7 +330,7 @@ void Menu::search_function() {
         cout << endl;
     } while (stop);
 }
-//Use to print out a customer of choice
+//Use to find and print out a customer of choice
 
 void Menu::change_info(Customer* c, int choice) {
     if (choice == 1) {
@@ -421,6 +423,7 @@ void Menu::change_info_function() {
         }
     } while (stop);
 }
+//Change information process
 
 void Menu::change_room(Customer* c) {
     int stop_function = 1;
@@ -532,5 +535,6 @@ void Menu::interface() {
         }
     } while (stop);
 }
+//Print how the program menu
 
 #endif // !MENU_H
