@@ -5,6 +5,8 @@
 #include <string>
 #include "customer.h"
 
+//Function and class definitions for class Room, Single_room and Double_room
+
 class Room {
 	int number;
 	bool vacancy;

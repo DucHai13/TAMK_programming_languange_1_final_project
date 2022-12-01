@@ -9,13 +9,16 @@
 #include "customer.h"
 #include "room.h"
 
-int randGen(int, int, int); 
+//Function and class definition for class menu
+//Functions for input validation, exception handling
+
+int randGen(int, int, int);
 //generate a random number between a and b, c = 1 if the return is even, c = 0 if the return is random
 
-int input_int(); 
+int input_int();
 // check if the input is correct (integer) and return the integer if the input is correct
 
-std::string input_string(); 
+std::string input_string();
 // check if the input is correct (string) and return the string if the input is correct
 
 bool check_range(int, int, int);
