@@ -1,2 +1,0 @@
-Reservation number  Customer            Discount  Total     Room
-25582               Chu Duc Hai         10%       270       12 
