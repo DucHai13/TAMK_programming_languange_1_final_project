@@ -21,6 +21,7 @@ int randGen(int a, int b, int c) {
 }
 //generate a random number between a and b, c = 1 if the return is even, c = 0 if the return is random
 
+
 int input_int() {
     string s;
     int ans = 0;
@@ -205,6 +206,22 @@ void Menu::calculate_total(Customer* c) {
 }
 //Use to calculate the total invoice of a customer, and also pick a random discount between 0% and 20%
 
+void Menu::write_to_file(Customer* c) {
+    int reservationNumber = c->getReservation();
+    string name = to_string(reservationNumber);
+    name += ".txt";
+    name = "invoice/" + name;
+    ofstream outf;
+    outf.open(name, ios::out);
+    outf << left << setw(20) << "Reservation number" << left << setw(20) << "Customer" << left << setw(10) << "Discount" << left << setw(10) << "Total" << left << "Room" << endl;
+    outf << left << setw(20) << c->getReservation() << left << setw(20) << c->getName() << left << setw(10) << to_string(c->getDiscount()) + "%" << left << setw(10) << c->getTotal();
+    for (int i = 1; i <= room_size; ++i) {
+        if (!room[i]->getVacancy() && (room[i]->getCustomer()->getReservation() == c->getReservation())) outf << room[i]->getNumber() << " ";
+    }
+    outf << endl;
+    outf.close();
+}
+
 void Menu::input() {
     int stop_input = 1;
     int check_available = room_size;
@@ -235,6 +252,7 @@ void Menu::input() {
             } while (stop_room_input);
             calculate_total(c);
             customer.push_back(c);
+            write_to_file(c);
             cout << "\nIf you want to add more customer, please choose 1. Otherwise, choose 0: ";
             stop_input = input_int();
             while (!check_range(stop_input, 0, 1)) {
@@ -361,6 +379,7 @@ void Menu::change_info(Customer* c, int choice) {
     else if (choice == 0) {
         cout << endl << "Process ended. " << endl;
     }
+    write_to_file(c);
 }
 //Use to change information of a customer
 
@@ -505,9 +524,10 @@ void Menu::interface() {
             << "2. Search for a customer " << endl
             << "3. Add customer " << endl
             << "4. Change information of a customer " << endl
+            << "5. Print invoice " << endl
             << "Enter your choice: ";
         choice = input_int();
-        while (!check_range(choice, 0, 4)) {
+        while (!check_range(choice, 0, 5)) {
             cout << "Out of range, please try again: ";
             choice = input_int();
         }
@@ -536,6 +556,9 @@ void Menu::interface() {
             cout << endl;
             change_info_function();
             cout << endl << "--------------------------------------" << endl;
+        }
+        else if (choice == 5) {
+            cout << endl;
         }
     } while (stop);
 }

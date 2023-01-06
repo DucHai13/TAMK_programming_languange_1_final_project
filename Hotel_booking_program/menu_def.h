@@ -6,6 +6,7 @@
 #include <time.h>
 #include <algorithm>
 #include <vector>
+#include <fstream>
 #include "customer.h"
 #include "room.h"
 
@@ -24,6 +25,7 @@ std::string input_string();
 bool check_range(int, int, int);
 //return true if a is within b and c
 
+
 class Menu {
 	std::vector <Room* > room;
 	std::vector <Customer* > customer;
@@ -33,6 +35,8 @@ public:
 	void input_customer(Customer*);
 	void input_room(Customer*);
 	void calculate_total(Customer*);
+	void write_to_file(Customer*);
+	//create and update the invoice for each customer
 	void input();
 	void output();
 	void print_customer(Customer*);
