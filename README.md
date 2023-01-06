@@ -26,4 +26,4 @@ This project is created and modified on visual studio community 2022, so if ther
 
 
 ## Update
-6/1/23: Added new method to save customer's invoice to a .txt file lies within the invoice folder
+23/1/6: Added new method to save customer's invoice to a .txt file lies within the invoice folder
